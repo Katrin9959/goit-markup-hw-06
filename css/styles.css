@@ -919,6 +919,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
     pointer-events: none;
 }
+.is-hidden .modal{
+    animation: none;
+    }
+
 .modal {
     min-height:581px; 
     width: 528px;
@@ -928,7 +932,22 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     transition: transform 250ms liniar;
     padding: 40px;
-    transform: scale(1.5);
+    animation:  zoom 750ms linear forwards;
+}
+
+
+@keyframes zoom { 
+    0%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+
 }
 
 .modal-title{
