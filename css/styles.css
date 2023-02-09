@@ -910,7 +910,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .mailing-button:hover,
 .mailing-button:focus{
-    background-color: var(--accent-color);}
+    background-color: var(--accent-color);
+}
  
 
 
@@ -970,7 +971,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-line-height: calc(23 / 20);
+   line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
